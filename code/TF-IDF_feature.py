@@ -3,8 +3,6 @@
 Created on Tue Oct 25 21:09:50 2016
 
 @author: Richard
-
-提取IF-IDF特征
 """
 
 # -*- coding: cp936 -*-
@@ -20,7 +18,7 @@ import sys
 import string
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
-sys.path.append(r"F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\age")
+sys.path.append("F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data")
 #from numpy import *
 fr = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\age\test.txt')
 fr_list = fr.read()
@@ -50,6 +48,6 @@ for i in range(len(weight)):
 				tfidfDict.update({getWord:getValue})
 sorted_tfidf = sorted(tfidfDict.iteritems(),
 					  key = lambda d:d[1],reverse = True)
-fw = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\age\resultoftest.txt','w')
+fw = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\age\resulttest.txt','w')
 for i in sorted_tfidf:
 	fw.write(i[0] + '\t' + str(i[1]) +'\n')
