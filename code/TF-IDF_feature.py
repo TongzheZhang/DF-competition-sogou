@@ -34,6 +34,7 @@ dataList = fr_list.split('\n')
 data = []#还是原行数数据，词用空格隔开
 for oneline in dataList:
     #print oneline 可以打印出来每行的内容
+    print oneline
     print 'line break'
     data.append(" ".join(jieba.cut(oneline))) 
 
