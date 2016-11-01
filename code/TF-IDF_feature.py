@@ -28,9 +28,10 @@ sys.setdefaultencoding( "utf-8" )
 sys.path.append("F:")
 
 #读入停顿符号和待提取文本
+
 stopwords = {}.fromkeys([ line.rstrip().decode('utf8') for line in open('stopwords_test.txt') ])
 stopwords.fromkeys([' '])
-fr = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\sex\sex1.txt')
+fr = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\sex\sex1_for_test.txt')
 fr_list = fr.read()
 dataList = fr_list.split('\n')
 data = []#还是原行数数据，词用空格隔开
@@ -82,6 +83,6 @@ for i in range(len(weight)):#遍历所有文本文本
 #返回一个排序后的列表
 sorted_tfidf = sorted(tfidfDict.iteritems(),#这是字典的迭代器
 					  key = lambda d:d[1],reverse = True)#这个key表示按照第一列的大小排列，即权重
-fw = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\sex\result_sex1','w')#w是新建
+fw = open(r'F:\study\master of TJU\DF\Sogou\DF-competition-sogou\data\sex\result_sex1_for_test.txt','w')#w是新建
 for i in sorted_tfidf:
 	fw.write(i[0] + '\t' + str(i[1]) +'\n')
