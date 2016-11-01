@@ -1,3 +1,4 @@
 TextGrocery：
 http://guoze.me/2015/01/11/tgrocery-introduction/?utm_source=tuicool&utm_medium=referral
 https://github.com/2shou/TextGrocery
+http://textgrocery.readthedocs.io/zh/latest/index.html
