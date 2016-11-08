@@ -62,7 +62,7 @@ tfidf = transformer.fit_transform(FT)#其实就是对数组进行计算
 #获取词袋模型中的所有词语
 word = freWord.get_feature_names()#获取词袋模型中的所有词语
 #得到权重
-weight = tfidf.toarray()#将tf-idf矩阵抽取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重
+weight = tfidf.toarray()#将tf-idf矩阵取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重
 '''
 print '三国演义在不同文本中的TF-IDF值，他只在第一行出现过四次'
 print weight[0][55]

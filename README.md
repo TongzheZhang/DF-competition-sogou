@@ -13,3 +13,7 @@
 正常结果：0.66117
 
 使用unigram 0.6509
+
+使用search切割 0.6633
+
+使用unigram加search切割 0.6566
