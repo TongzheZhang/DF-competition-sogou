@@ -10,10 +10,12 @@
 结果：
 
 
-正常结果：0.66117
+正常结果bigram+truecut：0.66117
 
-使用unigram 0.6509
+使用unigram+truecut 0.6509
 
-使用search切割 0.6633
+使用bigram+searchcut 0.6633
 
-使用unigram加search切割 0.6566
+使用unigram+searchcut 0.6566
+
+使用bigram+falsecut 0.66546
