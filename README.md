@@ -9,6 +9,7 @@
 
 结果：
 
+去除停用词之前：
 
 正常结果bigram+truecut：0.66117
 
@@ -19,3 +20,9 @@
 使用unigram+searchcut 0.6566
 
 使用bigram+falsecut 0.66546
+
+
+在去除停止词之后：
+
+正常结果bigram+truecut：0.6625
+
