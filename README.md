@@ -11,7 +11,7 @@
 
 去除停用词之前：
 
-正常结果bigram+truecut：0.66117
+正常结果bigram+truecut 0.66117
 
 使用unigram+truecut 0.6509
 
@@ -21,8 +21,20 @@
 
 使用bigram+falsecut 0.66546
 
+使用unigram+falsecut 0.65675
+
+
 
 在去除停止词之后：
 
-正常结果bigram+truecut：0.6625
+正常结果bigram+truecut 0.6625
 
+uni_truecut 0.64879
+
+bigram+falsecut 0.66625
+
+uni_cutfalse 0.65158
+
+bi_searchcut 0.66596
+
+uni_searchcut 0.65308
